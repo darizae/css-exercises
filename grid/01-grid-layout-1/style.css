@@ -8,6 +8,10 @@ body, html {
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 15% 15% 55% 15%;
+  grid-gap: 15px;
 }
 
 .container div {
@@ -21,11 +25,17 @@ body, html {
 
 .header {
   background-color: #FFDE22;
+  grid-column: 1 / span 2; /* occupies 2 columns, starting from the first one */
+  grid-row: 1; /* occupies the first row */
 }
+
 
 .sidebar {
   background-color: #FF7755;
+  grid-column: 1; /* occupies the first column */
+  grid-row: 2 / span 2; /* occupies 2 rows, starting from the second one */
 }
+
 
 .nav {
   background-color: #00DDFF;
@@ -44,4 +54,5 @@ body, html {
 
 .footer {
   background-color: #393f4d;
+  grid-column: 1 / span 2; /* occupies 2 columns, starting from the first one */
 }
