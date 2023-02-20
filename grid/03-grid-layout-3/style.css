@@ -45,6 +45,10 @@ ul {
   font-size: 16px;
 }
 
+.menu {
+  margin-left: 200px;
+}
+
 .sidebar {
   background-color: #FF7755;
   grid-row: 2 / span 2; /* This will make the sidebar span the second and third rows */
@@ -110,6 +114,10 @@ ul {
   background-color: #FFFFFF;
   color: black;
   text-align: center;
+}
+
+.card {
+  height: 200px;
 }
 
 .card p {
